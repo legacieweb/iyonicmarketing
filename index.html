@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 🌟 Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iyonic Marketing | Expert Digital Marketing Solutions</title>
+    <meta name="description" content="Boost your business with expert digital marketing. Iyonic Marketing handles everything – PPC Ads, SEO, Social Media & Email Campaigns to drive conversions!">
+    <meta name="keywords" content="Digital Marketing, SEO, PPC, Social Media Marketing, Email Marketing, Business Growth, Online Advertising, Iyonic Marketing, Iyonicorp, iyonicmarketing, marketing.iyonicorp.com, best digital marketing agency, expert marketing solutions, grow your business, increase conversions, drive traffic, boost sales, marketing strategies, marketing campaigns, online marketing services, marketing company, marketing agency, marketing experts, marketing professionals, marketing consultants, best marketing">
+    <meta name="author" content="Iyonic Marketing">
+    <meta name="robots" content="index, follow">
+
+    <!-- 🌟 Open Graph (OG) for Social Sharing -->
+    <meta property="og:title" content="Iyonic Marketing | Expert Digital Marketing Solutions">
+    <meta property="og:description" content="We handle your entire marketing strategy – PPC, SEO, Social Media & Email Campaigns to grow your business!">
+    <meta property="og:image" content="https://i.imgur.com/Nj67dYH.png">
+    <meta property="og:url" content="https://marketing.iyonicorp.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Iyonic Marketing">
+
+    <!-- 🌟 Twitter Card for Better Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iyonic Marketing | Expert Digital Marketing">
+    <meta name="twitter:description" content="We handle everything – PPC, SEO, Social Media & Email Campaigns to drive conversions and business growth!">
+    <meta name="twitter:image" content="https://i.imgur.com/Nj67dYH.png">
+    <meta name="twitter:site" content="@IyonicMarketing">
+
+    <!-- 🌟 Canonical URL (Prevents Duplicate Content Issues) -->
+    <link rel="canonical" href="https://marketing.iyonicorp.com">
+
+    <!-- 🌟 Favicon -->
+    <link rel="icon" href="https://i.imgur.com/Nj67dYH.png" type="image/x-icon">
+
+    <!-- 🌟 Structured Data (JSON-LD for Google Rich Results) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Iyonic Marketing",
+        "url": "https://marketing.iyonicorp.com",
+        "logo": "https://i.imgur.com/Nj67dYH.png",
+        "description": "We handle your digital marketing – PPC, SEO, Social Media & Email Campaigns to grow your business!",
+        "sameAs": [
+            "https://www.facebook.com/IyonicMarketing",
+            "https://twitter.com/IyonicMarketing",
+            "https://www.linkedin.com/company/iyonic-marketing"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1234567890",
+            "contactType": "customer service",
+            "areaServed": "Global",
+            "availableLanguage": ["English"]
+        }
+    }
+    </script>
+
+    <!-- 🌟 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 🌟 Additional SEO Improvements -->
+    <meta name="theme-color" content="#FFA500">  <!-- Changes browser color on mobile -->
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">  <!-- Suggests when search engines should revisit -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+    
+    <!-- 🌟 Responsive Header & Navbar -->
+<!-- 🌟 Animated Header -->
+<header class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-4 shadow-lg relative">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- Animated Brand Name -->
+        <h1 id="brand-name" class="text-2xl md:text-3xl font-bold relative flex">
+            <span class="brand-letter">I</span>
+            <span class="brand-letter">y</span>
+            <span class="brand-letter">o</span>
+            <span class="brand-letter">n</span>
+            <span class="brand-letter">i</span>
+            <span class="brand-letter">c</span>
+            &nbsp;
+            <span class="brand-letter">M</span>
+            <span class="brand-letter">a</span>
+            <span class="brand-letter">r</span>
+            <span class="brand-letter">k</span>
+            <span class="brand-letter">e</span>
+            <span class="brand-letter">t</span>
+            <span class="brand-letter">i</span>
+            <span class="brand-letter">n</span>
+            <span class="brand-letter">g</span>
+            <span class="glitter"></span>
+        </h1>
+</header>
+
+<!-- 🌟 CSS for Animations & Mobile Optimization -->
+<style>
+    /* 🌟 Letter Animation */
+    .brand-letter {
+        display: inline-block;
+        font-size: 1.5rem; /* Adjust for small screens */
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    @media (min-width: 768px) {
+        .brand-letter {
+            font-size: 2rem; /* Larger on desktops */
+        }
+    }
+
+    /* 🌟 Glitter Effect */
+    .glitter {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: radial-gradient(circle, #fff, transparent);
+        opacity: 0;
+        animation: glitter 1.5s infinite alternate;
+    }
+
+    @keyframes glitter {
+        0% { opacity: 0; transform: translateY(-5px) scale(0.8); }
+        50% { opacity: 1; transform: translateY(0) scale(1.2); }
+        100% { opacity: 0; transform: translateY(5px) scale(0.8); }
+    }
+
+    /* 🌟 Fade-in & Fade-out Animation */
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+    }
+
+    .brand-letter.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* 🌟 Mobile Menu Animations */
+    #mobile-menu {
+        display: none;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+<!-- 🌟 JavaScript for Letter Animation & Mobile Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const letters = document.querySelectorAll(".brand-letter");
+        let delay = 0;
+
+        function animateBrand() {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.classList.add("visible");
+                }, delay);
+                delay += 100;
+            });
+
+            // Start Fade-Out after appearing
+            setTimeout(() => {
+                letters.forEach((letter, index) => {
+                    setTimeout(() => {
+                        letter.classList.remove("visible");
+                    }, index * 100);
+                });
+
+                // Restart animation after fade-out
+                setTimeout(animateBrand, 2000);
+            }, 2000);
+        }
+
+        animateBrand();
+
+        // 🌟 Mobile Menu Toggle
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        });
+    });
+</script>
+
+
+<!-- 🌟 Hero Section (We Handle Everything for You) -->
+<section class="relative flex-1 text-center py-12 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 overflow-hidden">
+    <!-- 🌟 Animated Background -->
+    <div class="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-500 opacity-40 animate-bgMove"></div>
+
+    <div class="relative z-10">
+        <!-- 🌟 Title with Animation -->
+        <h2 class="text-4xl md:text-5xl font-extrabold animate-pulse">
+            🚀 We Run, Manage & Optimize Your Marketing!
+        </h2>
+
+        <!-- 🌟 Business Updates with Typing Effect -->
+        <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-100">
+            Forget the hassle—<strong class="text-gray-900 bg-yellow-200 px-2">we do everything for you</strong>.  
+            <span id="business-update" class="text-gray-900 bg-yellow-200 px-2"></span>
+        </p>
+
+        <!-- 🌟 Call-to-Action Button -->
+        <a href="contact/" class="mt-8 inline-block bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold shadow-lg 
+            hover:bg-yellow-300 hover:scale-110 transform transition duration-300 animate-bounce">
+            Let Us Handle It 🚀
+        </a>
+    </div>
+
+    <!-- 🌟 Floating Sparkles -->
+    <div class="absolute top-10 left-5 animate-float"><span class="text-5xl">✨</span></div>
+    <div class="absolute top-16 right-10 animate-float animation-delay-200"><span class="text-5xl">💡</span></div>
+    <div class="absolute bottom-12 left-12 animate-float animation-delay-400"><span class="text-5xl">🔥</span></div>
+    <div class="absolute bottom-16 right-8 animate-float animation-delay-600"><span class="text-5xl">📈</span></div>
+</section>
+
+<!-- 🌟 CSS for Animations -->
+<style>
+    /* 🌟 Background Movement */
+    @keyframes bgMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    .animate-bgMove {
+        background-size: 200% 200%;
+        animation: bgMove 8s infinite alternate ease-in-out;
+    }
+
+    /* 🌟 Floating Icons */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+    .animation-delay-200 { animation-delay: 0.2s; }
+    .animation-delay-400 { animation-delay: 0.4s; }
+    .animation-delay-600 { animation-delay: 0.6s; }
+</style>
+
+<!-- 🌟 JavaScript for Typing Effect (Recent Business Updates) -->
+<script>
+    const updates = [
+        "Our PPC ads generated 3X ROI for businesses! 🎯",
+        "We helped a brand get 5,000 new leads in 1 month! 💰",
+        "SEO strategies that drive massive organic traffic! 📈",
+        "AI-powered marketing campaigns increasing conversions! 🤖",
+    ];
+
+    let i = 0;
+    function updateBusinessText() {
+        const textElement = document.getElementById("business-update");
+        textElement.textContent = "";
+        let text = updates[i];
+        let j = 0;
+
+        function typeEffect() {
+            if (j < text.length) {
+                textElement.textContent += text[j];
+                j++;
+                setTimeout(typeEffect, 80);
+            } else {
+                setTimeout(() => {
+                    textElement.classList.add("opacity-0");
+                    setTimeout(() => {
+                        textElement.textContent = "";
+                        textElement.classList.remove("opacity-0");
+                        i = (i + 1) % updates.length;
+                        updateBusinessText();
+                    }, 500);
+                }, 3000);
+            }
+        }
+        typeEffect();
+    }
+
+    document.addEventListener("DOMContentLoaded", updateBusinessText);
+</script>
+
+
+<!-- 🌟 How We Grow Your Business -->
+<section class="py-10 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h3 class="text-4xl font-bold text-center mb-10">🚀 How We Grow Your Business</h3>
+        <p class="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-12">
+            You focus on running your business, while we handle everything—from ad campaigns to SEO, content, and email marketing.  
+            We do the hard work so you see the results.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Digital Advertising -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191112054904-FotoJet32.jpeg?format=pjeg&auto=webp&crop=16:9&width=675&height=380" alt="Digital Advertising" class="rounded-lg">
+                <h4 class="text-2xl font-bold mt-6 flex items-center">
+                    <span class="text-orange-600 text-4xl mr-2">📢</span> Digital Advertising
+                </h4>
+                <p class="mt-4 text-lg text-gray-700">
+                    We create, launch, and manage PPC, Google Ads, and Social Media Ads for you.  
+                    You don't need to lift a finger.  
+                </p>
+            </div>
+
+            <!-- Email Marketing -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <img src="https://media.sproutsocial.com/uploads/2021/07/email-marketing-featured-image.svg" alt="Email Marketing" class="rounded-lg">
+                <h4 class="text-2xl font-bold mt-6 flex items-center">
+                    <span class="text-blue-600 text-4xl mr-2">📧</span> Email Marketing
+                </h4>
+                <p class="mt-4 text-lg text-gray-700">
+                    We craft, automate, and optimize email campaigns that engage and convert your audience.  
+                    We build your email strategy, so you don’t have to.
+                </p>
+            </div>
+
+            <!-- SEO & Content -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <img src="https://searchengineland.com/wp-content/seloads/2017/06/content-seo-ss-1920-800x450.jpg" alt="SEO & Content" class="rounded-lg">
+                <h4 class="text-2xl font-bold mt-6 flex items-center">
+                    <span class="text-green-600 text-4xl mr-2">📈</span> SEO & Content
+                </h4>
+                <p class="mt-4 text-lg text-gray-700">
+                    We create high-quality content and optimize your site for search engines so you get more traffic, leads, and sales—automatically.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 🌟 Pricing Section -->
+<section class="py-15 bg-gray-100">
+    <div class="container mx-auto text-center px-6">
+        <h3 class="text-4xl font-bold mb-10">💰 Our Pricing Plans</h3>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+            Choose a plan that fits your business needs. No hidden fees, no surprises. 
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Starter Plan -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <h4 class="text-2xl font-bold text-gray-900">🚀 Starter</h4>
+                <p class="text-xl font-semibold text-orange-600 mt-4">$99/month</p>
+                <ul class="mt-6 text-gray-700 space-y-3">
+                    <li>✔️ 5 Ad Campaigns</li>
+                    <li>✔️ Basic SEO Optimization</li>
+                    <li>✔️ Email Marketing (500 Emails)</li>
+                    <li>❌ No Advanced Analytics</li>
+                </ul>
+                <button onclick="toggleDetails('starter-details')" class="mt-4 text-orange-600 hover:text-orange-400 transition">
+                    Learn More ⬇️
+                </button>
+                <div id="starter-details" class="hidden mt-4 text-gray-600 text-sm">
+                    Perfect for small businesses looking to get started with digital marketing.
+                </div>
+                <a href="contact/" class="mt-6 block bg-orange-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-orange-500 transition duration-300">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Growth Plan -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 border-4 border-yellow-400">
+                <h4 class="text-2xl font-bold text-gray-900">🔥 Growth</h4>
+                <p class="text-xl font-semibold text-yellow-500 mt-4">$199/month</p>
+                <ul class="mt-6 text-gray-700 space-y-3">
+                    <li>✔️ 15 Ad Campaigns</li>
+                    <li>✔️ Advanced SEO Optimization</li>
+                    <li>✔️ Email Marketing (5000 Emails)</li>
+                    <li>✔️ Social Media Management</li>
+                    <li>✔️ Monthly Performance Report</li>
+                </ul>
+                <button onclick="toggleDetails('growth-details')" class="mt-4 text-yellow-600 hover:text-yellow-400 transition">
+                    Learn More ⬇️
+                </button>
+                <div id="growth-details" class="hidden mt-4 text-gray-600 text-sm">
+                    Ideal for businesses that want to scale their digital presence and grow quickly.
+                </div>
+                <a href="contact/" class="mt-6 block bg-yellow-500 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-yellow-400 transition duration-300">
+                    Most Popular 🚀
+                </a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <h4 class="text-2xl font-bold text-gray-900">🏆 Enterprise</h4>
+                <p class="text-xl font-semibold text-green-600 mt-4">$499/month</p>
+                <ul class="mt-6 text-gray-700 space-y-3">
+                    <li>✔️ Unlimited Ad Campaigns</li>
+                    <li>✔️ Full SEO & Content Strategy</li>
+                    <li>✔️ Email Marketing (Unlimited)</li>
+                    <li>✔️ Dedicated Account Manager</li>
+                    <li>✔️ Custom Reporting Dashboard</li>
+                    <li>✔️ 24/7 Support</li>
+                </ul>
+                <button onclick="toggleDetails('enterprise-details')" class="mt-4 text-green-600 hover:text-green-400 transition">
+                    Learn More ⬇️
+                </button>
+                <div id="enterprise-details" class="hidden mt-4 text-gray-600 text-sm">
+                    Designed for established businesses looking for custom marketing solutions.
+                </div>
+                <a href="contact/" class="mt-6 block bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-green-500 transition duration-300">
+                    Get Premium
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 🌟 Why Choose Our Services? -->
+<section class="py-20 bg-gray-200">
+    <div class="container mx-auto text-center px-6">
+        <h3 class="text-4xl font-bold mb-10">🔍 Why Choose Iyonic Marketing?</h3>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+            We don’t just market—we create high-impact strategies that deliver real growth.  
+            Here’s why businesses trust Iyonic Marketing to handle their marketing needs.  
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Data-Driven Strategies -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <img src="https://lh3.googleusercontent.com/CAaXXgsB6LKd-fU9SSbUQ9V0ar24e_-rTqfjDDHCfhTqA_3miV3g8W7jZ97KILBA133niV41NfKWPDxOq8Ep7QRYfOlPWH3cQCWD=w904-h543-rw" alt="Data-Driven Strategies" class="rounded-lg">
+                <h4 class="text-2xl font-bold mt-6">📊 Data-Driven Strategies</h4>
+                <p class="mt-4 text-lg text-gray-700">
+                    We use AI-powered analytics and real-time data to optimize campaigns and deliver the best ROI possible.  
+                </p>
+            </div>
+
+            <!-- Fast & Measurable Growth -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <img src="https://blog.mobiversal.com/wp-content/uploads/2021/06/strategy-app-1024x1024.png" alt="Fast & Measurable Growth" class="rounded-lg">
+                <h4 class="text-2xl font-bold mt-6">⚡ Fast & Measurable Growth</h4>
+                <p class="mt-4 text-lg text-gray-700">
+                    Our marketing strategies are designed for rapid results, and we track everything so you know exactly what’s working.
+                </p>
+            </div>
+
+            <!-- Personalized Marketing -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <img src="https://www.fssi-ca.com/wp-content/uploads/PersonalizedMarketing-768x386.png" alt="Personalized Marketing" class="rounded-lg">
+                <h4 class="text-2xl font-bold mt-6">💡 Personalized Marketing</h4>
+                <p class="mt-4 text-lg text-gray-700">
+                    Every business is different. We create custom marketing strategies tailored to your brand’s specific needs and audience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 🌟 Call to Action (CTA) - High Impact -->
+<section class="relative py-20 bg-gradient-to-r from-purple-600 to-blue-500 text-white text-center overflow-hidden">
+    <!-- Floating Light Effects -->
+    <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle,#ffffff33,#00000000)] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 relative">
+        <!-- Animated Heading -->
+        <h3 class="text-5xl font-extrabold leading-tight animate-pulse">
+            🚀 Ready to Scale Your Business?
+        </h3>
+
+        <!-- Typing Effect -->
+        <p id="animated-text" class="text-2xl font-semibold mt-4 animate-fade-in">
+            Let’s take your brand to the next level with high-performance marketing strategies.
+        </p>
+
+        <!-- Action Button -->
+        <a href="contact/" class="mt-8 inline-block bg-yellow-400 text-gray-900 px-10 py-4 rounded-full text-xl font-bold shadow-lg 
+            hover:bg-yellow-300 transition transform hover:scale-105 animate-bounce duration-500 ease-in-out">
+            Get Started Today 🚀
+        </a>
+
+        <!-- Cool Floating Icons for Effect -->
+        <div class="absolute top-5 left-10 animate-float">
+            <span class="text-5xl">💡</span>
+        </div>
+        <div class="absolute top-5 right-10 animate-float animation-delay-200">
+            <span class="text-5xl">📊</span>
+        </div>
+        <div class="absolute bottom-5 left-10 animate-float animation-delay-400">
+            <span class="text-5xl">📈</span>
+        </div>
+        <div class="absolute bottom-5 right-10 animate-float animation-delay-600">
+            <span class="text-5xl">🔥</span>
+        </div>
+    </div>
+</section>
+
+<!-- Tailwind Animations & Custom Styles -->
+<style>
+    /* Floating Icons */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+    }
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+    .animation-delay-200 { animation-delay: 0.2s; }
+    .animation-delay-400 { animation-delay: 0.4s; }
+    .animation-delay-600 { animation-delay: 0.6s; }
+</style>
+
+<!-- JavaScript for Typing Effect -->
+<script>
+    const phrases = ["Let’s take your brand to the next level.", "We drive real growth for your business.", "Marketing that delivers results."];
+    let i = 0;
+    function updateText() {
+        document.getElementById("animated-text").textContent = phrases[i];
+        i = (i + 1) % phrases.length;
+    }
+    setInterval(updateText, 3000);
+</script>
+
+<!-- 🌟 Crazy Cool Animated Footer -->
+<footer class="relative bg-gray-900 text-white py-12 text-center overflow-hidden">
+    <!-- 🌊 Wave Animation -->
+    <div class="absolute top-0 left-0 w-full">
+        <svg viewBox="0 0 1440 320" class="w-full">
+            <path fill="#1a202c" fill-opacity="1"
+                d="M0,128L48,144C96,160,192,192,288,176C384,160,480,96,576,85.3C672,75,768,117,864,154.7C960,192,1056,224,1152,197.3C1248,171,1344,85,1392,42.7L1440,0L1440,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <div class="container mx-auto relative z-10">
+        <!-- 🌟 Logo & Name -->
+        <h2 class="text-3xl font-extrabold">🚀 Iyonic Marketing</h2>
+        <p class="mt-2 text-gray-400 text-lg">We power your digital growth.</p>
+
+        <!-- 🔗 Footer Links -->
+        <div class="mt-6 space-x-6 text-lg">
+            <a href="privacy/" class="hover:text-yellow-400 transition">Privacy Policy</a> |
+            <a href="terms/" class="hover:text-yellow-400 transition">Terms of Service</a> |
+            <a href="refund/" class="hover:text-yellow-400 transition">Refund Policy</a> |
+            <a href="clientsiterelation/" class="hover:text-yellow-400 transition">Client & Site Relation</a>
+        </div>
+
+        <!-- 🌍 Social Icons -->
+        <div class="mt-6 flex justify-center space-x-6">
+            <a href="#" class="animate-float">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Facebook" class="w-8">
+            </a>
+            <a href="#" class="animate-float animation-delay-200">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Twitter" class="w-8">
+            </a>
+            <a href="#" class="animate-float animation-delay-400">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384072.png" alt="LinkedIn" class="w-8">
+            </a>
+        </div>
+
+        <!-- 📜 Copyright -->
+        <p class="mt-6 text-gray-500 text-sm">&copy; 2025 Iyonic Marketing. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- 🌟 Footer Animations -->
+<style>
+    /* Floating Social Icons */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+    .animation-delay-200 { animation-delay: 0.2s; }
+    .animation-delay-400 { animation-delay: 0.4s; }
+
+    /* Glowing Text Effect */
+    footer h2 {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+</style>
+
+
+    <!-- 🌟 JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+<!-- 🌟 JavaScript for Collapsible Details -->
+<script>
+    function toggleDetails(id) {
+        let details = document.getElementById(id);
+        details.classList.toggle("hidden");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Iyonic Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen relative">
+    
+    <!-- 🌟 Header with Home Button -->
+    <header class="bg-gray-900 text-white py-4 text-center">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-bold">📞 Contact Us</h1>
+            <a href="https://marketing.iyonicorp.com" class="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-yellow-300 transition">
+                🔙 Home
+            </a>
+        </div>
+    </header>
+
+    <!-- 🌟 Contact Form Section -->
+    <section class="container mx-auto py-12 px-6 flex-1">
+        <h2 class="text-4xl font-bold text-center mb-6 animate-bounce">🚀 Get Started with Us</h2>
+        <p class="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-12">
+            Fill out the form below and our team will contact you within 24 hours!  
+        </p>
+
+        <form id="contactForm" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105 relative">
+            <label class="block text-lg font-semibold">📛 Full Name</label>
+            <input type="text" id="name" class="w-full p-3 mt-2 mb-4 border rounded" placeholder="Your Name" required>
+
+            <label class="block text-lg font-semibold">📧 Email Address</label>
+            <input type="email" id="email" class="w-full p-3 mt-2 mb-4 border rounded" placeholder="your@email.com" required>
+
+            <label class="block text-lg font-semibold">📞 Phone Number</label>
+            <input type="tel" id="phone" class="w-full p-3 mt-2 mb-4 border rounded" placeholder="+1234567890" required>
+
+            <label class="block text-lg font-semibold">💼 Business Name</label>
+            <input type="text" id="business" class="w-full p-3 mt-2 mb-4 border rounded" placeholder="Your Business Name">
+
+            <label class="block text-lg font-semibold">📝 Your Message</label>
+            <textarea id="message" class="w-full p-3 mt-2 border rounded" rows="4" placeholder="Tell us about your project..." required></textarea>
+
+            <button type="submit" class="mt-6 w-full bg-yellow-400 text-gray-900 px-6 py-3 rounded-full text-xl font-bold shadow-lg hover:bg-yellow-300 transition transform hover:scale-105">
+                🚀 Submit Inquiry
+            </button>
+        </form>
+
+        <!-- 🌟 Success Message (Initially Hidden) -->
+        <div id="successMessage" class="hidden fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-75">
+            <div class="bg-white p-8 rounded-lg text-center shadow-lg">
+                <h2 class="text-3xl font-bold text-green-600">✅ Message Sent!</h2>
+                <p class="text-lg text-gray-700 mt-4">Thank you for reaching out. We'll contact you within 24 hours!</p>
+                <button onclick="closeSuccessMessage()" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">
+                    🎉 OK, Got It!
+                </button>
+            </div>
+        </div>
+    </section>
+<!-- 🌟 FAQ Section -->
+<section class="py-20 bg-gray-200">
+    <div class="container mx-auto text-center px-6">
+        <h3 class="text-5xl font-extrabold mb-10 animate-pulse">❓ Got Questions? We've Got Answers!</h3>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+            We know you might have questions, and we're here to answer them.  
+            Check out our FAQs below!
+        </p>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+            <!-- FAQ 1: Pricing Transparency -->
+            <div class="faq-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <button onclick="toggleFaq('faq1', this)" class="w-full text-left text-xl font-semibold flex justify-between items-center">
+                    💰 How much does your service cost?  
+                    <span>➕</span>
+                </button>
+                <p id="faq1" class="hidden mt-4 text-gray-700">
+                    We offer flexible pricing plans based on your business needs.  
+                    Our plans start at $99/month for small businesses, with custom pricing for larger enterprises.
+                </p>
+            </div>
+
+            <!-- FAQ 2: Refund Policy -->
+            <div class="faq-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <button onclick="toggleFaq('faq2', this)" class="w-full text-left text-xl font-semibold flex justify-between items-center">
+                    🔄 What if I’m not happy with the service?  
+                    <span>➕</span>
+                </button>
+                <p id="faq2" class="hidden mt-4 text-gray-700">
+                    We offer a 7-day money-back guarantee for new clients.  
+                    If you’re unsatisfied within this period, we’ll issue a full refund—no questions asked!
+                </p>
+            </div>
+
+            <!-- FAQ 3: How Fast Are Results? -->
+            <div class="faq-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <button onclick="toggleFaq('faq3', this)" class="w-full text-left text-xl font-semibold flex justify-between items-center">
+                    🚀 How long will it take to see results?  
+                    <span>➕</span>
+                </button>
+                <p id="faq3" class="hidden mt-4 text-gray-700">
+                    It depends on your marketing plan!  
+                    - PPC Ads & Social Media → Results in 1-2 weeks  
+                    - SEO & Organic Growth → Takes 2-6 months for full impact  
+                </p>
+            </div>
+
+            <!-- FAQ 4: Who Handles My Marketing? -->
+            <div class="faq-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <button onclick="toggleFaq('faq4', this)" class="w-full text-left text-xl font-semibold flex justify-between items-center">
+                    👨‍💻 Do I need to manage anything, or do you handle it all?  
+                    <span>➕</span>
+                </button>
+                <p id="faq4" class="hidden mt-4 text-gray-700">
+                    We handle everything for you!  
+                    From strategy, ad creation, SEO, content writing, and performance tracking—we take care of it all.  
+                    You just sit back and watch your business grow!
+                </p>
+            </div>
+
+            <!-- FAQ 5: How Do I Get Started? -->
+            <div class="faq-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <button onclick="toggleFaq('faq5', this)" class="w-full text-left text-xl font-semibold flex justify-between items-center">
+                    📞 How do I start working with you?  
+                    <span>➕</span>
+                </button>
+                <p id="faq5" class="hidden mt-4 text-gray-700">
+                    Getting started is easy!  
+                    - Step 1: Fill out the contact form  
+                    - Step 2: We schedule a free strategy call  
+                    - Step 3: Our team launches your campaigns within 5 days  
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🌟 Crazy FAQ Animations -->
+<style>
+    /* FAQ Open/Close Animations */
+    .faq-item button span {
+        transition: transform 0.3s ease-in-out;
+    }
+    .faq-item.open button span {
+        transform: rotate(45deg);
+    }
+    .faq-item.open {
+        background-color: #fffbcc;
+        transition: background-color 0.3s ease-in-out;
+    }
+</style>
+
+<!-- 🌟 JavaScript for FAQ Interactions -->
+<script>
+    function toggleFaq(id, btn) {
+        let faq = document.getElementById(id);
+        let parent = btn.closest(".faq-item");
+
+        if (faq.classList.contains("hidden")) {
+            faq.classList.remove("hidden");
+            parent.classList.add("open");
+        } else {
+            faq.classList.add("hidden");
+            parent.classList.remove("open");
+        }
+    }
+</script>
+
+<!-- 🌟 Crazy Cool Animated Footer -->
+<footer class="relative bg-gray-900 text-white py-12 text-center overflow-hidden">
+    <!-- 🌊 Wave Animation -->
+    <div class="absolute top-0 left-0 w-full">
+        <svg viewBox="0 0 1440 320" class="w-full">
+            <path fill="#1a202c" fill-opacity="1"
+                d="M0,128L48,144C96,160,192,192,288,176C384,160,480,96,576,85.3C672,75,768,117,864,154.7C960,192,1056,224,1152,197.3C1248,171,1344,85,1392,42.7L1440,0L1440,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <div class="container mx-auto relative z-10">
+        <!-- 🌟 Logo & Name -->
+        <h2 class="text-3xl font-extrabold">🚀 Iyonic Marketing</h2>
+        <p class="mt-2 text-gray-400 text-lg">We power your digital growth.</p>
+
+        <!-- 🔗 Footer Links -->
+        <div class="mt-6 space-x-6 text-lg">
+            <a href="../privacy" class="hover:text-yellow-400 transition">Privacy Policy</a> |
+            <a href="../terms" class="hover:text-yellow-400 transition">Terms of Service</a> |
+            <a href="../refund" class="hover:text-yellow-400 transition">Refund Policy</a> |
+            <a href="../clientsiterelation" class="hover:text-yellow-400 transition">Client & Site Relation</a>
+        </div>
+
+        <!-- 🌍 Social Icons -->
+        <div class="mt-6 flex justify-center space-x-6">
+            <a href="#" class="animate-float">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Facebook" class="w-8">
+            </a>
+            <a href="#" class="animate-float animation-delay-200">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Twitter" class="w-8">
+            </a>
+            <a href="#" class="animate-float animation-delay-400">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384072.png" alt="LinkedIn" class="w-8">
+            </a>
+        </div>
+
+        <!-- 📜 Copyright -->
+        <p class="mt-6 text-gray-500 text-sm">&copy; 2025 Iyonic Marketing. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- 🌟 Footer Animations -->
+<style>
+    /* Floating Social Icons */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+    .animation-delay-200 { animation-delay: 0.2s; }
+    .animation-delay-400 { animation-delay: 0.4s; }
+
+    /* Glowing Text Effect */
+    footer h2 {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+</style>
+    <!-- 🌟 JavaScript for Form Submission & Animation -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                business: document.getElementById("business").value,
+                message: document.getElementById("message").value
+            };
+
+            const response = await fetch("http://localhost:5000/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                document.getElementById("contactForm").reset();
+                document.getElementById("successMessage").classList.remove("hidden");
+            } else {
+                alert("❌ Failed to send message. Please try again.");
+            }
+        });
+
+        function closeSuccessMessage() {
+            document.getElementById("successMessage").classList.add("hidden");
+        }
+    </script>
+
+</body>
+</html>
